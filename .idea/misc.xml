@@ -3,8 +3,12 @@
 <<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
 =======
+<<<<<<< HEAD
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+=======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
 >>>>>>> 54cda21c35774d819bdbaa92f0448ee1539067bc
+>>>>>>> 9ad245825134c1aea30e77a9a78dfdac3cd0bec0
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
