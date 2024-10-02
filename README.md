@@ -4,7 +4,7 @@
 ### 📤 프로젝트 열기
 * 프로젝트를 하나 생성하고 IntelliJ에서 원격 저장소를 연결해줍니다
 * ```git init``` // 저장소 생성
-* ```git remote -v https://github.com/HIUMC/UMC-7th-Spring-Study.git```  //저장소 내 컴퓨터 <-> 원격 연결
+* ```git remote add origin https://github.com/HIUMC/UMC-7th-Spring-Study.git```  //저장소 내 컴퓨터 <-> 원격 연결
 * ```git pull origin main```
 * IntelliJ의 terminal에서 자신의 branch로 checkout을 해주세요
     * ```git checkout origin [본인 github 아이디]```  //브랜치 개념 모른다면 구글링. 자신만의 공간을 만든다고 생각하시면 됩니다.
