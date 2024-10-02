@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# 디폴트 무시된 파일
+/shelf/
+/workspace.xml
+# 에디터 기반 HTTP 클라이언트 요청
+=======
+>>>>>>> 9ad245825134c1aea30e77a9a78dfdac3cd0bec0
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+<<<<<<< HEAD
+=======
+>>>>>>> 54cda21c35774d819bdbaa92f0448ee1539067bc
+>>>>>>> 9ad245825134c1aea30e77a9a78dfdac3cd0bec0
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
