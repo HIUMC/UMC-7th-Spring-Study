@@ -122,7 +122,7 @@
 * push를 완료했다면 스터디 repository에서 pull request를 진행합니다
     * 링크: https://github.com/HIUMC/UMC-7th-Spring-Study/pulls
 * PR(Pull Request)시 메세지 제목은 다음과 같이 ```[이름/닉네임] 1주차 정리내용 제출.``` 라고 적은 후 ```create pull request``` 버튼을 눌러주세요
-* PR : ```base: [master]``` <- ```compare: [본인 github 아이디]```
+* PR : ```base: [본인 해당 class 브랜치]``` <- ```compare: [본인 github 아이디]```
 
 
 ### ⏰ 과제 제출 마감 기한 (기재 예정)
