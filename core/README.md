@@ -114,16 +114,15 @@ public class OrderApp {
 
     ```java
     public class OrderServiceTest {
-    		,,,
+    		
         MemberService memberService = new MemberServiceImpl();
         OrderService orderService = new OrderServiceImpl();
-    		,,,
     }
     ```
 
     ```java
     public class OrderServiceTest {
-    		,,,
+
         MemberService memberService;
         OrderService orderService;
     
@@ -133,7 +132,6 @@ public class OrderApp {
             memberService = appConfig.memberService();
             orderService = appConfig.orderService();
         }
-    		,,,
     }
     ```
 
@@ -306,7 +304,7 @@ public class AppConfig {
 
 ```java
 ApplicationContext applicationContext = 
-											new AnnotationConfigApplicationContext(AppConfig.class)
+        new AnnotationConfigApplicationContext(AppConfig.class)
 ```
 
 - `ApplicationContext`를 스프링 컨테이너라고 한다.
