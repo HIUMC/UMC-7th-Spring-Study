@@ -6,7 +6,8 @@
 - DIP : Dependency Inversion Principle, 고수준 모듈은 저수준 모듈의 구현에 의존해서는 안 되며, 저수준 모듈이 고수준 모듈에서 정의한 추상 타입에 의존해야 한다는 원칙. ⇒ 시스템의 결합도를 낮추고 유연성과 확장성을 높이고 변경에 대한 영향 최소화.
     - 고수준 모듈 : 시스템의 추상적인 정책이나 프로세스를 정의하며, 시스템의 전체적인 행동을 결정
     - 저수준 모듈 : 고수준 모듈이 제공하는 기능을 구현하기 위해 필요한 구체적인 작업을 수행하는 모듈
-본
+
+```java
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -346,8 +347,8 @@ public class RateDiscountPolicy implements DiscountPolicy { }
 ```java
 @Bean
 public DiscountPolicy discountPolicy() {
-    return new RateDiscountPolicy();
-}
+        return new RateDiscountPolicy();
+        }
 ```
 
 - 이 코드에서 등록되는 빈의 이름은 메소드의 이름인 `discountPolicy`이고 빈의 타입은 반환 타입인 `RateDiscountPolicy`이다.
