@@ -3,18 +3,32 @@ package hello.hello_spring.service;
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
 import hello.hello_spring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     /**
     *  회원 가입
      */
 
     public Long join(Member member) {
+
+
+            validtatedDuplicateMember(member);
+            memberRepository.save(member);
+          return member.getId();
 
         //간츤 이름이 있는 중복 회원 불가
 
@@ -31,12 +45,12 @@ public class MemberService {
                         });*/
         // 이렇게! 근데 아예 메서드 추출을 해버리자
 
-        validtatedDuplicateMember(member);
+        //validtatedDuplicateMember(member);
         //이렇게
 
 
-        memberRepository.save(member);
-        return member.getId();
+       // memberRepository.save(member);
+        //return member.getId();
 
     }
 
@@ -52,7 +66,9 @@ public class MemberService {
      */
 
     public List<Member> findMembers(){
-        return memberRepository.findAll();
+        //return memberRepository.findAll();
+            return memberRepository.findAll();
+
     }
 
     public Optional<Member> findOne(Long memberId){
