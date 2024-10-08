@@ -1,26 +1,27 @@
 package hello.hello_spring.service;
+
 import hello.hello_spring.domain.Member;
+import hello.hello_spring.repository.MemberRepository;
 import hello.hello_spring.repository.MemoryMemberRepository;
-import hello.hello_spring.domain.Member;
-import hello.hello_spring.repository.MemoryMemberRepository;
-import hello.hello_spring.service.MemberService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
-class MemberServiceTest {
-    MemberService memberService;
-    MemoryMemberRepository memberRepository;
-    @BeforeEach
-    public void beforeEach() {
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    }
-    @AfterEach
-    public void afterEach() {
-        memberRepository.clearStore();
-    }
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+@SpringBootTest
+@Transactional //테스트가 끝나면 데이터 롤백해서 다시 비워줌
+public class MemberServiceIntegrationTest {
+
+    @Autowired MemberService memberService;
+    @Autowired MemberRepository memberRepository;
+
+
     @Test
     public void 회원가입() throws Exception {
         //Given
@@ -36,9 +37,9 @@ class MemberServiceTest {
     public void 중복_회원_예외() throws Exception {
         //Given
         Member member1 = new Member();
-        member1.setName("spring");
+        member1.setName("hellow1");
         Member member2 = new Member();
-        member2.setName("spring");
+        member2.setName("hellow1");
         //When
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class,
