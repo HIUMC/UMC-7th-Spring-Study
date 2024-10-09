@@ -256,3 +256,72 @@ where height > (select height from userTbl where name in ('김경호'));
 - 서브쿼리와 메인쿼리에서 비교하고자 하는 컬럼 개수와 컬럼의 위치가 동일해야 함
 
 출처 : https://snowple.tistory.com/360, https://inpa.tistory.com/entry/MYSQL-%F0%9F%93%9A-%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC-%EC%A0%95%EB%A6%AC
+
+# 페이징
+
+Database자체에서 끊어서 가져오는 것
+
+데이터가 많을 때 쿼리를 사용하게 되면 엄청난 렉 발생하기 때문에 사용
+
+## Offset based 페이징
+
+---
+
+직접 페이지 번호를 찾아내어 이동하는 페이징
+
+```sql
+select *
+from book
+order by likes desc
+limit 10 offset 0;
+```
+
+위와 같이 limit를 통해 한 페이지에서 보여줄 데이터의 개수를 정하고
+
+offset으로 몇 개를 **건너뛸지를 정함**
+
+페이지 x번에 대하여 한 페이지에 y개를 보여준다면
+
+```sql
+select * 
+from book
+order by likes desc
+limit y offset(x - 1) * y;
+```
+
+보통 1페이지가 첫 페이지이기 때문에 (x - 1)
+
+### Offset paging의 단점
+
+- 직접 여러 개의 데이터를 넘어가서 가져온다는 느낌 → 페이지가 뒤로 갈수록 넘어가는 데이터가 많아져 성능 상의 이슈 있음
+- 1 페이지에서 2 페이지로 넘어가려는 찰나, 게시글 6개가 추가되면 2 페이지로 왔는데 1 페이지에서 봤던 게 또 보일 수 있음
+
+## Cursor based 페이징
+
+---
+
+커서(마지막으로 조회한 콘텐츠)로 무언가를 가르켜 페이징을 하는 방법
+
+→ 마지막으로 조회한 대상 다음부터 가져오는 것
+
+마지막으로 조회한 책의 좋아요가 20이라면 (좋아요 칼럼이 있다고 가정) 20 자리에 마지막으로 조회한 책의 아이디를 가져와서 이런 형태의 쿼리가  됨.
+
+```sql
+select * 
+from book 
+where book.likes < 20 
+order by likes desc 
+limit 15;
+```
+
+```sql
+select * 
+from book 
+where book.likes < (
+		select likes 
+		from book 
+		where id = 4
+		)
+order by likes desc 
+limit 15;
+```
