@@ -2,9 +2,16 @@ package com.example.testsecurity.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -18,6 +25,15 @@ public class SecurityConfig {
     }
 
     @Bean
+    public RoleHierarchy roleHierarchy() {
+
+        return RoleHierarchyImpl.fromHierarchy("""
+            ROLE_C > ROLE_B
+            ROLE_B > ROLE_A
+            """);
+    }
+
+    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         // 특정 경로로 요청이 왔을 때 그 경로는 모든 사용자에게 오픈시켜주고,
@@ -26,21 +42,60 @@ public class SecurityConfig {
 
         http
                 .authorizeHttpRequests((auth) -> auth
-                        .requestMatchers("/", "/login").permitAll() // 특정 경로에 대해 어떤 작업을 진행하고 싶다는 설정
-                        .requestMatchers("/admin").hasRole("ADMIN")
-                        .requestMatchers("/my/**").hasAnyRole("ADMIN", "USER")
-                        .anyRequest().authenticated() // 위에서 처리하지 못한 나머지 경로 처리 -> 로그인한 사용자만 접근할 수 있도록
+                        .requestMatchers("/login").permitAll()
+                        .requestMatchers("/").hasAnyRole("A")
+                        .requestMatchers("/manager").hasAnyRole("B")
+                        .requestMatchers("/admin").hasAnyRole("C")
+                        .anyRequest().authenticated()
                 );
 
         http
-                .formLogin((auth) -> auth.loginPage("/login") // 우리가 설정해둔 로그인 페이지 경로가 어디있는지 설정해줌
-                    .loginProcessingUrl("/loginProc")
-                    .permitAll()
+                .formLogin((auth) -> auth.loginPage("/login")
+                        .loginProcessingUrl("/loginProc")
+                        .permitAll()
                 );
+
+        // formLogin 방식
+//        http
+//                .formLogin((auth) -> auth.loginPage("/login") // 우리가 설정해둔 로그인 페이지 경로가 어디있는지 설정해줌
+//                    .loginProcessingUrl("/loginProc")
+//                    .permitAll()
+//                );
+
+        // httpBasic 방식
+        http
+                .httpBasic(Customizer.withDefaults());
 
         http
                 .csrf((auth) -> auth.disable());
 
+//        http
+//                .sessionManagement((auth) -> auth
+//                        .maximumSessions(1) // 하나의 아이디를 통한 동시 접속 중복 로그인을 허용하는 개수
+//                        .maxSessionsPreventsLogin(true)); // 다중 로그인 개수를 초과하였을 경우 처리 방법
+//
+//        http
+//                .sessionManagement((auth) -> auth
+//                        .sessionFixation().changeSessionId());
+
         return http.build();
     }
+
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//
+//        UserDetails user1 = User.builder()
+//                .username("user1")
+//                .password(bCryptPasswordEncoder().encode("1234"))
+//                .roles("ADMIN")
+//                .build();
+//
+//        UserDetails user2 = User.builder()
+//                .username("user2")
+//                .password(bCryptPasswordEncoder().encode("1234"))
+//                .roles("USER")
+//                .build();
+//
+//        return new InMemoryUserDetailsManager(user1, user2);
+//    }
 }
