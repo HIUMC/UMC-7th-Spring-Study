@@ -21,4 +21,8 @@ public class OrderServiceImpl implements OrderService {
 
         return new Order(memberId, itemName, itemPrice, discountPrice); //최종가격으로 바뀐 Order 객체를 return
     }
+//테스트용
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
