@@ -12,6 +12,10 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+    //@Bean memberService -> new MemoryMemberService
+    //@Bean OrderService -> new MemoryMemberService
+    // 싱글톤 위반??
+
 @Configuration
 public class AppConfig {
 
