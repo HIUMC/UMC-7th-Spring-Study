@@ -5,6 +5,7 @@ import hello.core.discount.FixDiscountPolicy;
 import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.*;
 
+@Component
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
@@ -23,5 +24,10 @@ public class OrderServiceImpl implements OrderService{
         int discountedPrice = discountPolicy.discount(member,itemPrice);
 
         return new Order(memberId,itemName,itemPrice,discountedPrice);
+    }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }
