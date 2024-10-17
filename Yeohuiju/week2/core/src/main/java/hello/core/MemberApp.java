@@ -6,12 +6,10 @@ import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MemberApp  {
-
+public class MemberApp {
     public static void main(String[] args) {
-
-//        MemberService memberService = new MemberServiceImpl();
 //        AppConfig appConfig = new AppConfig();
 //        MemberService memberService = appConfig.memberService();
 
@@ -23,7 +21,7 @@ public class MemberApp  {
 
         Member findMember = memberService.findMember(1L);
         System.out.println("new member = " + member.getName());
-        System.out.println("find Member = " + findMember.getName());
+        System.out.println("find Member: " + findMember.getName());
 
 
     }
