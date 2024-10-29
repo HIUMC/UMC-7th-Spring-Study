@@ -13,7 +13,7 @@ java {
 	}
 }
 configurations {
-	compileOnly{
+	compileOnly {
 		extendsFrom annotationProcessor
 	}
 }
@@ -24,11 +24,16 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	//web library
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'javax.inject:javax.inject:1'
+//lombok library 시작
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
-
+//lombok library 끝
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
