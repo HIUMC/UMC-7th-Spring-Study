@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RateDisocuntPolicyTest {
+class RateDiscountPolicyTest {
 
-    RateDisocuntPolicy discountPolicy = new RateDisocuntPolicy();
+    RateDiscountPolicy discountPolicy = new RateDiscountPolicy();
 
     @Test
     @DisplayName("Vip는 10%할인이 적용되어야 한다")
