@@ -15,6 +15,7 @@ public class AutowiredTest {
     }
 
     static class TestBean{
+        /*
         //호출 안됨
         @Autowired(required = false)
         public void setNoBean1(Member noBean1) {
@@ -29,6 +30,6 @@ public class AutowiredTest {
         @Autowired(required = false)
         public void setNoBean3(Optional<Member> noBean3) {
             System.out.println("setNoBean3 = " + noBean3);
-        }
+        }*/
     }
 }
