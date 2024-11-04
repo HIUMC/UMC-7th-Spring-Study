@@ -22,10 +22,10 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService() {
-        /*return new OrderServiceImpl(
+        return new OrderServiceImpl(
                 memberRepository(),
-                discountPolicy());*/
-        return null;
+                discountPolicy());
+        //return null;
     }
 
     @Bean
