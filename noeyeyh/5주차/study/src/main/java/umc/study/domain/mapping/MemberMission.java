@@ -2,8 +2,11 @@ package umc.study.domain.mapping;
 
 import jakarta.persistence.*;
 import lombok.*;
+import umc.study.domain.Store;
 import umc.study.domain.common.BaseEntity;
 import umc.study.domain.enums.MissionStatus;
+
+import java.time.LocalDate;
 
 @Entity
 @Getter
@@ -16,6 +19,13 @@ public class MemberMission extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Enumerated(EnumType.STRING)
-    private MissionStatus status;
+    private Integer reward;
+
+    private LocalDate deadline;
+
+    private String missionSpec;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "store_id")
+    private Store store;
 }
