@@ -14,6 +14,9 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Constructor;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 @Component
 public class OrderServiceImpl implements OrderService {
 
@@ -22,6 +25,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
