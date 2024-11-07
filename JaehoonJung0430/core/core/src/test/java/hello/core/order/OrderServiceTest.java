@@ -13,6 +13,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+import org.junit.jupiter.api.BeforeEach;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class OrderServiceTest {
@@ -34,6 +37,4 @@ class OrderServiceTest {
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
-
-
 }
