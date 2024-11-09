@@ -15,8 +15,10 @@ public class Review extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, length = 20)
     private String title;
 
+    @Column(nullable = false, precision = 5, scale = 2)
     private Float score;
 
     @ManyToOne(fetch = FetchType.LAZY)

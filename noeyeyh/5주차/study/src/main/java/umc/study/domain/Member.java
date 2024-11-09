@@ -56,9 +56,6 @@ public class Member extends BaseEntity {
     private List<MemberAgree> memberAgreeList = new ArrayList<>();
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
-    private List<MemberPrefer> memberPreferList = new ArrayList<>();
-
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Review> reviewList = new ArrayList<>();
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
