@@ -22,5 +22,6 @@ public class Member {
     private Address address;
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>(); //컬렉션 가급적이면 바꾸지 않아야 하이버네이트에서 계속해서 관리하고 추적 가능
+
 }
