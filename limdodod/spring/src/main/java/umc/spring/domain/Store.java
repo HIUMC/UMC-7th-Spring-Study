@@ -5,6 +5,7 @@ import lombok.*;
 import umc.spring.domain.common.BaseEntity;
 import umc.spring.domain.mapping.MemberPrefer;
 
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,4 +33,14 @@ import java.util.List;
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
     private List<Review> review = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "Store{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", score=" + score +
+                ", region=" + (region != null ? region.getName() : "N/A") + // region의 이름 출력
+                '}';
+    }
 }
