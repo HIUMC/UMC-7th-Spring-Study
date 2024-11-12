@@ -37,18 +37,17 @@ class MemberServiceTest {
     public void 중복회원예외() throws Exception {
         //Given
         Member member1 = new Member();
-        member1.setName("kim");
+        member1.setName("kim1");
 
         Member member2 = new Member();
-        member2.setName("kim");
+        member2.setName("kim1");
 
-        //When
+        // When & Then
         memberService.join(member1);
-        memberService.join(member2); //예외가 발생해야 한다.
-
-        //Then
-        fail("예외가 발생해야 한다.");
-
+        assertThrows(IllegalStateException.class, () -> {
+            memberService.join(member2); // 예외 발생 테스트
+        });
+       //예외가 발생해야 한다
     }
 
 }
