@@ -31,13 +31,13 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService() {
-        return new OrderServiceImpl(
-                memberRepository(), Discountpolicy());
+        return new OrderServiceImpl(memberRepository(), discountPolicy()) ;
     }
 
     @Bean
-    public DiscountPolicy Discountpolicy() {
-//        return new FixDiscountPolicy();
+    public DiscountPolicy discountPolicy() {
         return new RateDiscountPolicy();
+
     }
+
 }
