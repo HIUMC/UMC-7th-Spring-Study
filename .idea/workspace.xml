@@ -5,9 +5,97 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a262a1-ed93-4e29-846a-87a5d0d0ba35" name="Changes" comment="박건우(하키) : 5주차 제출">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/CategoryItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Delivery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/DeliveryStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Item/Album.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Item/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Item/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Item/Movie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/OrderItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/domain/OrderStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/repository/MemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/test/jpabook/jpashop/service/MemberServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/reports/tests/test/classes/jpabook.jpashop.service.MemberServiceTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/reports/tests/test/packages/jpabook.jpashop.service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/resources/test/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/TEST-jpabook.jpashop.service.MemberServiceTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Address.class.uniqueId10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Album.class.uniqueId9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Book.class.uniqueId7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Category.class.uniqueId3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Delivery.class.uniqueId4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Item.class.uniqueId5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Member.class.uniqueId6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/MemberRepository.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Movie.class.uniqueId2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/Order.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/compileTransaction/stash-dir/OrderItem.class.uniqueId8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileTestJava/compileTransaction/stash-dir/MemberServiceTest.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/CategoryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Item/NotEnoughStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/test/java/jpabook/jpashop/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/modules/jpashop.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/.idea/modules/jpashop.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/JpashopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/JpashopApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/main/jpabook/jpashop/MemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/test/jpabook/jpashop/JpashopApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/test/jpabook/jpashop/JpashopApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/classes/java/test/jpabook/jpashop/MemberRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/reports/tests/test/classes/jpabook.jpashop.MemberRepositoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/reports/tests/test/packages/jpabook.jpashop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/TEST-jpabook.jpashop.MemberRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/java/jpabook/jpashop/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/jpashop/src/test/java/jpabook/jpashop/MemberRepositoryTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonsmileCheetah/spring" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/spring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonsmileCheetah/spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/nonsmileCheetah/spring/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonsmileCheetah/spring/src/main/java/umc/spring/Application.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonsmileCheetah/spring/src/main/java/umc/spring/domain/FoodCategory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonsmileCheetah/spring/src/main/java/umc/spring/domain/Member.java" beforeDir="false" />
@@ -99,6 +187,8 @@
       <workItem from="1730899314803" duration="30000" />
       <workItem from="1730899727043" duration="407000" />
       <workItem from="1731328693894" duration="51000" />
+      <workItem from="1731573573190" duration="623000" />
+      <workItem from="1731582149009" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="박건우(하키) : 5주차 제출">
       <option name="closed" value="true" />
