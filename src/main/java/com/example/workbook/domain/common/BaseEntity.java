@@ -1,7 +1,8 @@
 package com.example.workbook.domain.common;
 
-import javax.persistence.EntityListeners;
-import javax.persistence.MappedSuperclass;
+import jakarta.persistence.MappedSuperclass;
+
+import jakarta.persistence.EntityListeners;
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

@@ -10,7 +10,7 @@ import com.example.workbook.domain.enums.MemberStatus;
 import jakarta.persistence.Id;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;

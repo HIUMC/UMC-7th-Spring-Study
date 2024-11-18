@@ -4,7 +4,7 @@ import com.example.workbook.domain.common.BaseEntity;
 import com.example.workbook.domain.mapping.MemberMission;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
