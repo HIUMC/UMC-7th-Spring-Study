@@ -20,8 +20,11 @@ import static org.springframework.test.util.AssertionErrors.fail;
 @Transactional
 public class MemberServiceTest {
 
+
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
+
+
 
     @Test
     public void 회원가입() throws Exception {
