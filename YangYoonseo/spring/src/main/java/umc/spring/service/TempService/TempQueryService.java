@@ -1,4 +1,7 @@
 package umc.spring.service.TempService;
 
-public class TempQueryService {
+
+public interface TempQueryService {
+
+    void CheckFlag(Integer flag);
 }

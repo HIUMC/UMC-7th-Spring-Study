@@ -1,4 +1,8 @@
 package umc.spring.apiPayload.code;
 
-public class BaseErrorCode {
+public interface BaseErrorCode {
+    ErrorReasonDTO getReason();
+
+    ErrorReasonDTO getReasonHttpStatus();
+
 }

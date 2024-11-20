@@ -1,4 +1,9 @@
 package umc.spring.apiPayload.code;
 
-public class BaseCode {
+import java.awt.desktop.UserSessionEvent;
+
+public interface BaseCode {
+    ReasonDTO getReason();
+    ReasonDTO getReasonHttpStatus();
+
 }
