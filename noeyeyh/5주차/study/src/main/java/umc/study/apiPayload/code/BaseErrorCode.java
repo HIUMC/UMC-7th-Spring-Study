@@ -2,7 +2,7 @@ package umc.study.apiPayload.code;
 
 public interface BaseErrorCode {
 
-    ErrorReason getReason();
+    ErrorReasonDTO getReason();
 
-    ErrorReason getReasonHttpStatus();
+    ErrorReasonDTO getReasonHttpStatus();
 }
