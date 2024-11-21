@@ -35,7 +35,7 @@ public class Order {
 
     public void setMember(Member member) {
         this.member = member;
-        member.getOrders().add(this);
+        member.getOrders().add((jakarta.persistence.criteria.Order) this);
     }
 
     public void addOrderItem(OrderItem orderItem) {
