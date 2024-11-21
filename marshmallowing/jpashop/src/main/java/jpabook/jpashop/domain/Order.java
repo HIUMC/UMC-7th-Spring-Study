@@ -29,7 +29,7 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems=new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
     @JoinColumn(name="delivery_id")
     private Delivery delivery;
 
