@@ -1,0 +1,19 @@
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:test //스프링 부트를 사용하게 되면 아무 설정을 하지 않아도 메모리 디비로 테스트를 동작하게 된다.
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create //스프링은 기본이 create-drop
+#    properties:
+#      hibernate:
+#        #        show_sql: true
+#        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace

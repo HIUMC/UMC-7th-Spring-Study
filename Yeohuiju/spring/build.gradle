@@ -8,7 +8,13 @@ group = 'umc'
 version = '0.0.1-SNAPSHOT'
 
 java {
+<<<<<<< HEAD
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+=======
 	sourceCompatibility = '17'
+>>>>>>> c979aa390bcb69d0faf0e306d2517d8c6204427f
 }
 
 configurations {
@@ -29,6 +35,8 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+<<<<<<< HEAD
+=======
 
 	// QueryDSL Implementation
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
@@ -36,11 +44,14 @@ dependencies {
 	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
 	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 
+>>>>>>> c979aa390bcb69d0faf0e306d2517d8c6204427f
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
 }
+<<<<<<< HEAD
+=======
 
 /**
  * QueryDSL Build Options
@@ -58,3 +69,4 @@ tasks.withType(JavaCompile) {
 clean.doLast {
 	file(querydslDir).deleteDir()
 }
+>>>>>>> c979aa390bcb69d0faf0e306d2517d8c6204427f

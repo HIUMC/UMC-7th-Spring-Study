@@ -1,5 +1,10 @@
 package umc.spring;
 
+<<<<<<< HEAD
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+=======
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +12,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import umc.spring.service.StoreService.StoreQueryService;
+>>>>>>> c979aa390bcb69d0faf0e306d2517d8c6204427f
 
 @SpringBootApplication
 @EnableJpaAuditing
@@ -16,6 +22,8 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+<<<<<<< HEAD
+=======
 	@Bean
 	public CommandLineRunner run(ApplicationContext context) {
 		return args -> {
@@ -34,4 +42,5 @@ public class Application {
 					.forEach(System.out::println);
 		};
 	}
+>>>>>>> c979aa390bcb69d0faf0e306d2517d8c6204427f
 }
