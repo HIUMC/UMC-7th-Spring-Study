@@ -1,10 +1,11 @@
 package umc.spring.domain.mapping;
 
-import jakarta.persistence.*;
 import lombok.*;
 import umc.spring.domain.Member;
 import umc.spring.domain.Terms;
 import umc.spring.domain.common.BaseEntity;
+
+import jakarta.persistence.*;
 
 @Entity
 @Getter
