@@ -42,5 +42,6 @@ public abstract class Item {
         if (restStock < 0){
             throw new NotEnoughStockException();
         }
+        stockQuantity = restStock;
     }
 }
