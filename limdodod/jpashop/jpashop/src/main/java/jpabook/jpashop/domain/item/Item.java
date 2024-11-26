@@ -28,6 +28,7 @@ public abstract class Item {
     //비즈니스 로직//
     /**재고 증가**/
     public void addStock(int quantity) {
+        System.out.println("addStock 호출됨. 현재 재고: " + this.stockQuantity + ", 추가 수량: " + quantity);
         this.stockQuantity += quantity;
     }
 
@@ -37,7 +38,7 @@ public abstract class Item {
         if(restStock<0) {
             throw new NotEnoughStockException("need more stock");
         }
-        this.stockQuantity -= restStock;
+        this.stockQuantity = restStock;
     }
 
 }
