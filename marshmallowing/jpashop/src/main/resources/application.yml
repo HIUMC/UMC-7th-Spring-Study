@@ -5,6 +5,10 @@ spring: #띄어쓰기 없음
     password:
     driver-class-name: org.h2.Driver
 
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
   jpa: #띄어쓰기 2칸
     hibernate: #띄어쓰기 4칸
       ddl-auto: create #띄어쓰기 6칸
@@ -16,3 +20,4 @@ logging:
   level: #띄어쓰기 없음
     org.hibernate.SQL: debug #띄어쓰기 2칸
     org.hibernate.type: trace #띄어쓰기 2칸
+
