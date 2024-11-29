@@ -26,6 +26,8 @@ dependencies {
 	implementation 'org.hibernate.validator:hibernate-validator:7.0.5.Final' // Hibernate Validator 추가
 	implementation 'jakarta.validation:jakarta.validation-api:3.0.2' // Jakarta Validation API
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0' //swagger
+
 
 	// queryDSL
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
