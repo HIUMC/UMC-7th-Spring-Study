@@ -18,4 +18,8 @@ public class Department {
     private List<Doctor> doctors;
 
     private String name;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "hospital_id")
+    private Hospital hospital;
 }

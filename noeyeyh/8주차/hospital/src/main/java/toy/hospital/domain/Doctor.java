@@ -24,7 +24,4 @@ public class Doctor {
     private String name;
 
     private String phoneNumber;
-
-    @OneToMany(mappedBy = "patient")
-    public List<Reserve> reserves = new ArrayList<>();
 }
