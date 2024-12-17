@@ -2,11 +2,13 @@ package toyproject.hongikhospital.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
 @Entity
 @Getter @Setter
+@RequiredArgsConstructor
 public class Doctor {
 
     @Id
@@ -21,4 +23,5 @@ public class Doctor {
     private String Name;
 
     private Integer Experience;
+
 }
