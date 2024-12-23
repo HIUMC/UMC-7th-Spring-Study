@@ -18,13 +18,21 @@ public class Mission extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    public Long id;
 
     private Integer reward;
 
     private LocalDate deadline;
 
-    private String missionSpec;
+    public String missionSpec;
+
+    public static Mission create(Store store, String missionSpec, int reward) {
+        Mission mission = new Mission();
+        mission.store = store;
+        mission.missionSpec = missionSpec;
+        mission.reward = reward;
+        return mission;
+    }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "store_id")
@@ -32,4 +40,5 @@ public class Mission extends BaseEntity {
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)
     private List<MemberMission> memberMissionList = new ArrayList<>();
+
 }

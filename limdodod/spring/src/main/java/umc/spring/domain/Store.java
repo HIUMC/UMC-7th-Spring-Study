@@ -11,8 +11,8 @@ import java.util.List;
 
 @Entity
     @Getter
+    @Setter
     @Builder
-    @NoArgsConstructor(access = AccessLevel.PROTECTED)
     @AllArgsConstructor
     public class Store extends BaseEntity {
 
@@ -26,12 +26,18 @@ import java.util.List;
 
         private Float score;
 
+
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
     private Region region;
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
     private List<Review> review = new ArrayList<>();
+
+    public Store() {
+
+    }
 
     @Override
     public String toString() {

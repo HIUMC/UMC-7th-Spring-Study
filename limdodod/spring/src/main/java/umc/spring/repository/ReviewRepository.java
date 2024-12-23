@@ -1,4 +1,4 @@
 package umc.spring.repository;
 
-public class ReviewRepository {
+public class ReviewRepository{
 }
