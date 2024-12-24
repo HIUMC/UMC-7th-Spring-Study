@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+`
+Model
+`
+)
+*
+`
+) 객체에 보관
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>이름</th>
+                <th>도시</th>
+                <th>주소</th>
+                <th>우편번호</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr
+                    th:each="member : ${members}">
+                <td
+                        th:text="${member.id}"></td>
+                <td
+                <td
+                <td
+                <td
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    th:text="${member.name}"></td>
+    th:text="${member.address?.city}"></td>
+    th:text="${member.address?.street}"></td>
+    th:text="${member.address?.zipcode}"></td>
+    <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
